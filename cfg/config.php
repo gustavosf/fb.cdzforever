@@ -11,7 +11,7 @@ if ($_SERVER['SERVER_NAME'] == 'fb.cdzforever.net') {
 include "db.config.php";
 
 // base configuration
-define('BASE_PATH','http://fb.cdzforever.net/');
+define('BASE_URI','http://fb.cdzforever.net/');
 
 define('LIB_DIR', dirname(dirname(__FILE__)).DS.'lib');
 define('APL_DIR', dirname(dirname(__FILE__)).DS.'apl');

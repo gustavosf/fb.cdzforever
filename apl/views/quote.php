@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>CDZForever</title>
-		<link rel='stylesheet' href='css/style.css'>
+		<link rel='stylesheet' href='<?php echo BASE_URI; ?>css/style.css'>
 	</head>
 	<body>
 		<div id='fb-root'>
@@ -24,10 +24,10 @@
 					//display: 'iframe', 
 					description: '<b><?php echo $quote; ?></b>',
 					link: 'http://apps.facebook.com/cdzforever',
-					picture: 'http://seganfredo.net/cdzf/img/seiya.jpg',
+					picture: 'http://fb.cdzforever.net/img/seiya.jpg',
 					name: 'CDZForever',
 					caption: 'Frases dos Cavaleiros do Zodíaco',
-					redirect_uri: 'http://seganfredo.net/cdzf/redirect-back.php',
+					redirect_uri: 'http://db.cdzforever.net/redirect',
 					next: null
 				});
 			};

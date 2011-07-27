@@ -1,3 +1,7 @@
+body {
+	margin:0px;
+	padding:0px;
+}
 #fb-root {
 	background:url(../img/bg.png) no-repeat;
 	min-height:500px;
