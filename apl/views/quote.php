@@ -28,8 +28,8 @@
 					caption: 'Frases dos Cavaleiros do Zodíaco'
 				}, function(resp) {
 					if (resp) {
-						window.top.location = "http://www.facebook.com/"
-							+ resp.post_id.replace(/[0-9]+_/, "segaway/posts/");
+						window.top.location = 'http://www.facebook.com/'
+							+ resp.post_id.replace('_', '/posts/');
 					}
 					else {
 						window.location.reload();
