@@ -17,5 +17,6 @@ define('LIB_DIR', dirname(dirname(__FILE__)).DS.'lib');
 define('APL_DIR', dirname(dirname(__FILE__)).DS.'apl');
 define('VIEW_DIR', dirname(dirname(__FILE__)).DS.'apl'.DS.'views');
 
-define('APP_ID', '240133959342144');
-define('APP_URL', 'http://apps.facebook.com/cdzforever');
+// app configuration (not tracked), includes
+// APP_ID, APP_SECRET and APP_URL (which is apps.facebook.com/cdzforever ;D)
+include "app.config.php";

@@ -2,7 +2,7 @@
 
 // Redireciona para a página do app no facebook
 Router::get('redirect', function() {
-	header('location:'.APP_URL);
+	header('location:'.APP_CANVAS);
 });
 
 // dump do $_SERVER

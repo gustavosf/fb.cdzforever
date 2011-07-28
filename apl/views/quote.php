@@ -21,14 +21,19 @@
 			var postIt = function() {
 				FB.ui({
 					method: 'feed',
-					//display: 'iframe', 
 					description: '<b><?php echo $quote; ?></b>',
-					link: 'http://apps.facebook.com/cdzforever',
+					link: '<?php echo APP_CANVAS; ?>',
 					picture: 'http://fb.cdzforever.net/img/seiya.jpg',
 					name: 'CDZForever',
-					caption: 'Frases dos Cavaleiros do Zodíaco',
-					redirect_uri: 'http://db.cdzforever.net/redirect',
-					next: null
+					caption: 'Frases dos Cavaleiros do Zodíaco'
+				}, function(resp) {
+					if (resp) {
+						window.top.location = "http://www.facebook.com/"
+							+ resp.post_id.replace(/[0-9]+_/, "segaway/posts/");
+					}
+					else {
+						window.location.reload();
+					}
 				});
 			};
 		</script>
