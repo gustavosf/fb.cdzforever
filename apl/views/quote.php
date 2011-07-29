@@ -7,7 +7,8 @@
 		<div id='fb-root'>
 			<div class="quote">
 				<?php echo $quote; ?><br/><br/>
-				<a href='#' onclick='postIt()'>Postar essa porra no meu mural</a>
+				<a href='#' onclick='postIt()'>Postar essa porra no meu mural</a><br/>
+				<a href='#' onclick='window.location.reload()'>Carregar outra Frase</a>
 			</div>
 		</div>
 		<script src='http://connect.facebook.net/en_US/all.js'></script>
