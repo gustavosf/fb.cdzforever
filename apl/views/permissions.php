@@ -7,7 +7,7 @@
 				+ "client_id=<?php echo APP_ID; ?>&"
 				+ "redirect_uri=<?php echo APP_REDIRECT; ?>&"
 				+ "scope=<?php echo APP_PERMISSIONS; ?>";
-		window.open(url, '_parent', '');
+		window.top.location = url;
 	</script>
 </head>
 
